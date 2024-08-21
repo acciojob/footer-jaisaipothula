@@ -1,79 +1,44 @@
-/* Reset margin and padding for a clean slate */
-body, h2, p, ul, li {
+/* General Reset */
+body, h1, p, a {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #f8f8f8;
     padding: 20px;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-section {
-    flex: 1 1 200px; /* Grow and shrink with a base width of 200px */
-    margin: 10px;
-}
-
-.footer-section h2 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 8px;
-}
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
     text-align: center;
-    margin-top: 20px;
 }
 
-.social-media {
+.media-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px; /* Space between icons */
+    margin-bottom: 20px;
 }
 
-.media-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
+.media-icons a {
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    font-size: 18px;
 }
 
-.media-icons img:hover {
-    transform: scale(1.1);
+.link-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; /* Space between link groups */
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.link-boxes .links a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-size: 18px;
+    margin: 0 10px;
+}
 
-    .footer-section {
-        text-align: center;
-        margin: 10px 0;
-    }
+.link-boxes .contact p {
+    color: #333; /* Text color for contact info */
+    font-size: 16px;
 }
