@@ -1,1 +1,79 @@
-/* your code here */
+/* Reset margin and padding for a clean slate */
+body, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Grow and shrink with a base width of 200px */
+    margin: 10px;
+}
+
+.footer-section h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.media-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
